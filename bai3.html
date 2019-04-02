@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhap so bat ki <br>
+<input type="text" id="num">
+<input type="button" id="check" value="KiemTra" onclick="Check()"> <br>
+<p id="result"></p>
+<script>
+    function Check() {
+        let a = parseInt(document.getElementById('num').value);
+        if (a > 0) {
+            document.getElementById('result').innerHTML = "So lon hon 0";
+        } else {
+            document.getElementById('result').innerHTML = "So nho hon 0";
+        }
+    }
+</script>
+</body>
+</html>
